@@ -1,0 +1,65 @@
+baseURL: "https://example.com/"   # 部署后改成真实域名
+languageCode: zh-CN
+defaultContentLanguage: zh
+hasCJKLanguage: true
+title: 张刚的写作
+theme: PaperMod
+enableRobotsTXT: true
+pagination:
+  pagerSize: 10
+summaryLength: 120
+
+params:
+  author: 张刚
+  description: 张刚（unicome）关于历史、哲学、文明、AI 与小说的写作
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: true      # 全文 RSS，便于导入 Substack
+  math: true                   # 在文章 front matter 中 math: true 启用 KaTeX
+  homeInfoParams:
+    Title: 张刚的写作
+    Content: 历史 · 哲学 · 文明 · AI · 小说
+  fuseOpts:
+    keys: ["title", "permalink", "summary", "content"]
+  # --- giscus 评论（待配置） ---
+  # comments: true
+  # giscus:
+  #   repo: "unicome/blog"
+  #   repoId: ""
+  #   category: "Announcements"
+  #   categoryId: ""
+  # --- 统计（待配置） ---
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: ""
+
+menu:
+  main:
+    - {identifier: posts, name: 文章, url: /posts/, weight: 10}
+    - {identifier: categories, name: 分类, url: /categories/, weight: 20}
+    - {identifier: tags, name: 标签, url: /tags/, weight: 30}
+    - {identifier: archives, name: 归档, url: /archives/, weight: 40}
+    - {identifier: about, name: 关于, url: /about/, weight: 50}
+    - {identifier: search, name: 搜索, url: /search/, weight: 60}
+
+outputs:
+  home: [HTML, RSS, JSON]
+
+markup:
+  goldmark:
+    renderer: {unsafe: true}
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)'], ['$', '$']]
