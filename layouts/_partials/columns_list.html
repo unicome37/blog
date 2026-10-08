@@ -1,0 +1,21 @@
+{{- /* 五个栏目的列表：标题、一句话说明、文章数。参数 heading 可选 */}}
+{{- with site.GetPage "/categories" }}
+{{- with $.heading }}<h2 class="columns-heading">{{ . }}</h2>{{ end }}
+{{- range .Pages.ByWeight }}
+<article class="post-entry column-entry">
+  <header class="entry-header">
+    <h2>{{ .Title }}</h2>
+  </header>
+  {{- with .Description }}
+  <div class="entry-content">
+    <p>{{ . }}</p>
+  </div>
+  {{- end }}
+  <footer class="entry-footer">
+    {{- $n := len .Pages }}
+    {{- if gt $n 0 }}{{ $n }} 篇文章{{ else }}暂无文章，敬请期待{{ end }}
+  </footer>
+  <a class="entry-link" aria-label="{{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+{{- end }}

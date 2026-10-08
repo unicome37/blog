@@ -1,0 +1,12 @@
+{{- /* 文章顶部的说明：栏目、系列，以及 note（史实 / 合理重建 / 虚构等） */}}
+{{- $cats := .GetTerms "categories" }}
+{{- $series := .GetTerms "series" }}
+{{- if or $cats $series }}
+<div class="post-taxo">
+  {{- with $cats }}<span>栏目：{{ range $i, $t := . }}{{ if $i }}、{{ end }}<a href="{{ $t.RelPermalink }}">{{ $t.LinkTitle }}</a>{{ end }}</span>{{ end }}
+  {{- with $series }}<span>系列：{{ range $i, $t := . }}{{ if $i }}、{{ end }}<a href="{{ $t.RelPermalink }}">{{ $t.LinkTitle }}</a>{{ end }}</span>{{ end }}
+</div>
+{{- end }}
+{{- with .Params.note }}
+<aside class="post-note">{{ . | markdownify }}</aside>
+{{- end }}

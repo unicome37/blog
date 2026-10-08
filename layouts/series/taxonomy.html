@@ -1,0 +1,25 @@
+{{- define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}
+  <div class="post-description">{{ . }}</div>
+  {{- end }}
+</header>
+{{- with .Content }}
+<div class="post-content md-content">{{ . }}</div>
+{{- end }}
+{{- if .Pages }}
+{{- range .Pages.ByTitle }}
+<article class="post-entry">
+  <header class="entry-header"><h2>{{ .Title }}</h2></header>
+  {{- with .Description }}<div class="entry-content"><p>{{ . }}</p></div>{{ end }}
+  <footer class="entry-footer">共 {{ len .Pages }} 篇</footer>
+  <a class="entry-link" aria-label="{{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+{{- else }}
+<div class="empty-state">
+  <p>暂无作品，敬请期待。第一部作品开始连载后，会出现在这里。</p>
+</div>
+{{- end }}
+{{- end }}

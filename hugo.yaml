@@ -1,5 +1,5 @@
 baseURL: "https://blog.unicome.org/"
-languageCode: zh-CN
+locale: zh-CN
 defaultContentLanguage: zh
 hasCJKLanguage: true
 title: 张刚的写作
@@ -9,9 +9,15 @@ pagination:
   pagerSize: 10
 summaryLength: 120
 
+taxonomies:
+  category: categories   # 栏目
+  tag: tags               # 标签
+  series: series          # 作品与系列
+
 params:
   author: 张刚
-  description: 张刚（unicome）关于历史、哲学、文明、AI 与小说的写作
+  description: 记录人如何在时间里活过，也记录世界正在怎样改变。
+  mainSections: [posts]
   defaultTheme: auto
   disableThemeToggle: false
   ShowReadingTime: true
@@ -27,7 +33,9 @@ params:
   math: true                   # 在文章 front matter 中 math: true 启用 KaTeX
   homeInfoParams:
     Title: 张刚的写作
-    Content: 历史 · 哲学 · 文明 · AI · 小说
+    Content: 记录人如何在时间里活过，也记录世界正在怎样改变。
+  footer:
+    text: 原来你也来过这里
   fuseOpts:
     keys: ["title", "permalink", "summary", "content"]
   # --- giscus 评论（待配置） ---
@@ -45,11 +53,11 @@ params:
 menu:
   main:
     - {identifier: posts, name: 文章, url: /posts/, weight: 10}
-    - {identifier: categories, name: 分类, url: /categories/, weight: 20}
-    - {identifier: tags, name: 标签, url: /tags/, weight: 30}
+    - {identifier: columns, name: 栏目, url: /categories/, weight: 20}
+    - {identifier: series, name: 作品与系列, url: /series/, weight: 30}
     - {identifier: archives, name: 归档, url: /archives/, weight: 40}
-    - {identifier: about, name: 关于, url: /about/, weight: 50}
-    - {identifier: search, name: 搜索, url: /search/, weight: 60}
+    - {identifier: search, name: 搜索, url: /search/, weight: 50}
+    - {identifier: about, name: 关于, url: /about/, weight: 60}
 
 outputs:
   home: [HTML, RSS, JSON]
