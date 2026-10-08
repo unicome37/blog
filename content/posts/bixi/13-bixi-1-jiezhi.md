@@ -1,7 +1,7 @@
 ---
 title: "碧玺传 · 卷一 戒指碎片感知（一）"
 slug: bixi-1-jiezhi
-date: 2026-10-27T08:01:00+08:00
+date: 2026-10-08T08:12:00+08:00
 draft: false
 categories: [xiaoshuo]
 series: [碧玺传]
