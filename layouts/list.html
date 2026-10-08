@@ -28,6 +28,10 @@
   </div>
   {{- end }}
 </header>
+{{- /* 系列等词条页：显示 _index.md 里的 note 说明框（例如“本书为历史小说……”） */}}
+{{- if and (eq .Kind "term") .Params.note }}
+<aside class="post-note">{{ .Params.note | markdownify }}</aside>
+{{- end }}
 {{- end }}
 
 {{- if .Content }}
