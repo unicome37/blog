@@ -1,4 +1,4 @@
-baseURL: "https://example.com/"   # 部署后改成真实域名
+baseURL: "https://unicome37.github.io/blog/"   # 绑定域名后改为 https://blog.unicome.org/
 languageCode: zh-CN
 defaultContentLanguage: zh
 hasCJKLanguage: true
