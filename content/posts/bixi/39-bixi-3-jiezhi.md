@@ -1,8 +1,8 @@
 ---
 title: "碧玺传 · 卷三 戒指碎片感知（三）"
 slug: bixi-3-jiezhi
-date: 2026-10-08T08:38:00+08:00
-draft: true
+date: 2026-12-11T08:01:00+08:00
+draft: false
 categories: [xiaoshuo]
 series: [碧玺传]
 tags: [历史小说]

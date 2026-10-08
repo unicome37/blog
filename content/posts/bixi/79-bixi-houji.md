@@ -1,8 +1,8 @@
 ---
 title: "碧玺传 · 后记 文物是文明承载时间的容器"
 slug: bixi-houji
-date: 2026-10-08T09:18:00+08:00
-draft: true
+date: 2027-02-19T08:01:00+08:00
+draft: false
 categories: [xiaoshuo]
 series: [碧玺传]
 tags: [历史小说]

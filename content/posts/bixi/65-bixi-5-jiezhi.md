@@ -1,8 +1,8 @@
 ---
 title: "碧玺传 · 卷五 戒指碎片感知（五）"
 slug: bixi-5-jiezhi
-date: 2026-10-08T09:04:00+08:00
-draft: true
+date: 2027-01-26T08:01:00+08:00
+draft: false
 categories: [xiaoshuo]
 series: [碧玺传]
 tags: [历史小说]

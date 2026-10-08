@@ -1,8 +1,8 @@
 ---
 title: "碧玺传 · 卷四 戒指碎片感知（四）"
 slug: bixi-4-jiezhi
-date: 2026-10-08T08:51:00+08:00
-draft: true
+date: 2027-01-05T08:00:00+08:00
+draft: false
 categories: [xiaoshuo]
 series: [碧玺传]
 tags: [历史小说]

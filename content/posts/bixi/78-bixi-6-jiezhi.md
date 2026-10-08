@@ -1,8 +1,8 @@
 ---
 title: "碧玺传 · 卷六 戒指碎片感知（六）"
 slug: bixi-6-jiezhi
-date: 2026-10-08T09:17:00+08:00
-draft: true
+date: 2027-02-19T08:00:00+08:00
+draft: false
 categories: [xiaoshuo]
 series: [碧玺传]
 tags: [历史小说]
